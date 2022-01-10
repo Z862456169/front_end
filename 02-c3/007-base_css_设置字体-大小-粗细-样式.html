@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置字体-大小-粗细-样式</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        /* 标题需要单独设置字体大小 */
+        h2 {
+            font-family: "宋体";
+            font-size: 30px;
+            /* font-weight: normal; */
+            font-weight: 400;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .bold {
+            /* font-weight: bold; */
+            /* 这个700后面不用加单位，等价于bold，字体加粗，也可以使用strong标签 */
+            /* 提倡使用数字 */
+            font-weight: 700;
+        }
+
+        .waile {
+            font-style: italic;
+            /* 斜体 */
+        }
+
+        em {
+            font-style: normal;
+            /* 斜体变正 */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>水调歌头</h2>
+    <p>你说帘卷海棠，</p>
+    <p>仅凭鸳鸯。</p>
+    <p class="bold">后来庭院春深，</p>
+    <p class="waile">咫尺画堂。</p>
+    <em>共婵娟</em>
+</body>
+
+</html>
