@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input输入表单元素</title>
+</head>
+
+<body>
+    <!-- 
+        表单元素：
+            1、input输入表单元素
+            2、select下拉表单元素
+            3、textarea文本域表单元素
+        input表单元素：用于收集用户信息
+        <input type="属性值" name="" value="" checked="" maxlength="">
+        type:
+            type属性值           描述
+            button---------定义可点击按钮（多数情况下，用于通过JavaScript 启动脚本）
+            checkbox-------定义复选框。
+            file-----------定义输入字段和“浏览”按钮，供文件上传。
+            hidden---------定义隐藏的输入字段。
+            image----------定义图像形式的提交按钮。
+            password-------定义密码字段。该字段中的字符被掩码。
+            radio----------定义单选按钮。
+            reset----------定义重置按钮。重置按钮会清除表单中的所有数据。
+            submit---------定义提交按钮。提交按钮会把表单数据发送到服务器。
+            text-----------定义单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符。
+        name：规定input的名字，单选框和多选框的name值要一样
+        value：规定input的值
+        checked：规定此input首次加载是被选中
+        maxlength：规定字段中字符的最大长度
+
+        1.name和value是每个表单元素都有的属性，主要供后台使用
+     -->
+    <form action="#" method="get">
+        <!-- text 文本框 可输入任何内容 -->
+        用户名： <input type="text" name="username" value="请输入名字" maxlength="6"> <br>
+
+        <!-- password 密码框 用户看不见输入的密码 -->
+        密码：<input type="password" name="password"> <br>
+
+        <!-- radio 单选框 实现单选 -->
+        <!-- name是表单元素的名字，性别必须是相同name才能实现多选一 -->
+        性别：男<input type="radio" name="sex" value="男" checked="checked"> 女<input type="radio" name="sex" value="女"> <br>
+
+        <!-- checkbox 复选框 可实现多选 -->
+        爱好：抽烟<input type="checkbox" name="hobby" value="抽烟"> 喝酒<input type="checkbox" name="hobby" value="喝酒"> 烫头<input
+            type="checkbox" name="hobby" value="烫头" checked="checked"> <br>
+
+        <!-- 点击提交按钮后，会把表单域form里的表单元素中的值，提交给后台服务器 -->
+        <input type="submit" value="提交一下吧">
+
+        <!-- 重置按钮可以将表单元素恢复为初始默认状态 -->
+        <input type="reset" value="清空一下吧">
+
+        <!-- 普通按钮button 可以结合js使用 -->
+        <input type="button" value="这是一个button按钮"> <br>
+
+        <!-- 文件域：上传文件使用 -->
+        上传头像：<input type="file">
+    </form>
+</body>
+
+</html>

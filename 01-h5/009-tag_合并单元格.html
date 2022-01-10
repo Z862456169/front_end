@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="CH-zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+
+<body>
+    <!-- 
+        跨行合并：rowspan="合并单元格的个数"，最上侧单元格为目标单元格，写合并代码。向下合并，下面行要删除冗余单元格
+        跨列合并：colspan="合并单元格的个数"，最左侧单元格为目标单元格，写合并代码。向右合并，当前行要删除冗余单元格
+     -->
+    <table align="left" border="1" cellpadding="0" cellspacing="0" width="500" height="200">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <table align="left" border="1" cellpadding="0" cellspacing="0" width="500" height="200">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
