@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 语法：元素1 元素2 { 样式声明 } 
+           选中的是父元素里的子元素，儿子、孙子都会被选择
+           元素1和元素2可以是任何基础选择器
+        */
+        ol li {
+            color: green;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">孙子</a></li>
+    </ol>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">二孙子</a></li>
+        <li><a href="#">二孙子</a></li>
+        <li><a href="#">二孙子</a></li>
+    </ul>
+</body>
+
+</html>
