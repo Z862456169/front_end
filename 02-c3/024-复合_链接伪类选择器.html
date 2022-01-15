@@ -9,6 +9,19 @@
     <style>
         /* 向某些选择器添加特殊效果 */
         /* 1.未被访问过的链接 a:link 把没有点击过的（没有访问过的）链接筛选出来 */
+        /* 注意事项：
+           1、为确保生效，按照LVHA顺序书写，:link ,:visited ,:hover ,:active 
+           2、a链接在浏览器中有默认的样式，需要给链接单独指定样式
+           3、实际使用中常用
+           给所有链接指定样式
+           a {
+               color:red;
+           }
+           设置鼠标经过样式
+           a:hover {
+               color:skybull;
+           }
+         */
         a:link {
             color: #333;
             text-decoration: none;
