@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片位置-精确单位</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 1000px;
+            background-color: pink;
+            background-image: url(images/风景.png);
+            background-repeat: no-repeat;
+            /* 使用精确单位需要先x轴再y轴 */
+            /* background-position: 10px 50px; */
+
+            /* 如果只使用一个精确位置，则一定是x轴位置，y轴默认居中 */
+            background-position: 20px;
+
+            /* 可以使用混合单位，先x轴，后y轴 */
+            /* background-position: 20px center; */
+        }
+    </style>
+</head>
+    
+<body>
+    <div></div>
+</body>
+
+</html>
