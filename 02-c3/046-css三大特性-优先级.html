@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <style>
+        div {
+            color: red;
+            font-size: 20px;
+        }
+
+        .test {
+            color: skyblue !important;
+            font-size: 30px;
+        }
+
+        #demo {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 根据选择器的权重来排序，权重大的优先级高 -->
+    <div class="test" id="demo">你笑起来真好看</div>
+
+    <img src="./images/选择器优先级权重.png" alt="选择器优先级权重">
+</body>
+
+</html>

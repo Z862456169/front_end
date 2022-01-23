@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高的继承</title>
+    <style>
+        body {
+            color: red;
+            /* font: 20px/24px 'Microsoft YaHei'; */
+            font: 20px/1.5 'Microsoft YaHei';
+        }
+
+        div {
+            /* 子元素会继承父元素body的行高的1.5倍 */
+            /* 1.5是当前元素大小font-size的1.5倍 所以当前div的行高是14x1.5=21像素 */
+            font-size: 14px;
+        }
+
+        p {
+            /* 行高：16x1.5=24px */
+            font-size: 16;
+        }
+        /* li没有指定文字大小，会继承父亲的文字大小20px 所以li的行高为20x1.5=30px */
+    </style>
+</head>
+
+<body>
+    <!-- 子标签继承父标签的某些样式（与文字、颜色相关样式） -->
+    <div>明月几时有</div>
+    <p>把酒问青天</p>
+    <ul>
+        <li>没有文字大小</li>
+    </ul>
+</body>
+
+</html>
