@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>额外标签法清除浮动</title>
+    <style>
+        /* 清除浮动的方法：
+            1、额外标签法也称为隔墙法，是W3C推荐的做法
+            2、父级添加overflow属性
+            3、父级添加after伪元素
+            4、父级添加双伪元素 */
+        .box {
+            width: 700px;
+            border: 2px solid red;
+            background-color: blue;
+        }
+
+        .damao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+
+        /* 在最后一个浮动后加一个块级元素盒子 */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<div class="box">
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+    <div class="clear"></div>
+</div>
+<div class="footer"></div>
+
+<body>
+
+</body>
+
+</html>
